@@ -1,0 +1,47 @@
+{
+	"Paren": {
+		"prefix": "\\left(",
+		"body": ["\\left( $1 \\right)"],
+		"description": "Create Latex parentheses"
+	},
+	// "Bracket": {
+	// 	"prefix": "\\left[",
+	// 	"body": ["\\Bigl[$1\\Bigr]"],
+	// 	"description": "Create LaTeX Big brackets"
+	// },
+	"Bracket": {
+		"prefix": "\\left[",
+		"body": ["\\left[ $1 \\right]"],
+		"description": "Create LaTeX brackets"
+	},
+	"Brace": {
+		"prefix": "\\left{",
+		"body": ["\\left{ $1 \\right}"],
+		"description": "Create LaTeX brace"
+	},
+	"Frac": {
+		"prefix": "\\frac",
+		"body": ["\\frac{${1:x}}{${2:x}}"],
+		"description": "Create LaTeX fraction"
+	},
+	"Lim": {
+		"prefix": "\\lim",
+		"body": ["\\lim\\limits_{${1:x} \\to ${2:\\infty}}"],
+		"description": "Create LaTeX limit"
+	},
+	"Sum": {
+		"prefix": "\\sum",
+		"body": ["\\sum_{${1:x}}^{${x}}"],
+		"description": "Create LaTeX sum"
+	},
+	"Derivative": {
+		"prefix": "\\der",
+		"body": ["\\frac{d$1}{d$2}"],
+		"description": "Leibniz's notation of a derivative"
+	},
+	"Text": {
+		"prefix": "\\text",
+		"body": ["\\text{ $1 }"],
+		"description": "Create text with space padded on both sides"
+	}
+}
